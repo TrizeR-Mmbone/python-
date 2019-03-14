@@ -1,0 +1,441 @@
+Python 3.0.1 (r301:69561, Feb 13 2009, 17:50:10) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> first_name='Trizer'
+>>> balance=1000
+>>> second_name='Mercy'
+>>> second_balance=10000
+>>> sms='hello {},n\your balance is 1000'
+>>> print(sms)
+hello {},n\your balance is 1000
+>>> sms='hello {},n\your balance is{}' .format(first_name,balance)
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    sms='hello {},n\your balance is{}' .format(first_name,balance)
+ValueError: zero length field name in format
+>>> sms='hello {},\n your balance is{}'.format(first_name,balance)
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    sms='hello {},\n your balance is{}'.format(first_name,balance)
+ValueError: zero length field name in format
+>>> sms='hello {},\n your balance is {} '.format(first_name,balance)
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    sms='hello {},\n your balance is {} '.format(first_name,balance)
+ValueError: zero length field name in format
+>>> sms='hello {},\n your balance is {} '.format(first_name,balance)
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    sms='hello {},\n your balance is {} '.format(first_name,balance)
+ValueError: zero length field name in format
+>>> prrint(sms)
+Traceback (most recent call last):
+  File "<pyshell#10>", line 1, in <module>
+    prrint(sms)
+NameError: name 'prrint' is not defined
+>>> type(a)
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    type(a)
+NameError: name 'a' is not defined
+>>> a="car"
+>>> b=10
+>>> type(a)
+<class 'str'>
+>>> type(b)
+<class 'int'>
+>>> s='Akirachix'
+>>> type(s)
+<class 'str'>
+>>> s.upper()
+'AKIRACHIX'
+>>> s.lower()
+'akirachix'
+>>> s.endswith('x')
+True
+>>> s.endswith('k')
+False
+>>> s.startswith('k')
+False
+>>> s.stratswith('a')
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    s.stratswith('a')
+AttributeError: 'str' object has no attribute 'stratswith'
+>>> s.stratswith('A')
+Traceback (most recent call last):
+  File "<pyshell#24>", line 1, in <module>
+    s.stratswith('A')
+AttributeError: 'str' object has no attribute 'stratswith'
+>>> s.startswith('A')
+True
+>>> s.islower()
+False
+>>> b.islower()
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    b.islower()
+AttributeError: 'int' object has no attribute 'islower'
+>>> b=s.lower()
+>>> b.islower
+<built-in method islower of str object at 0x0000000002BB7D50>
+>>> b.islower()
+True
+>>> b.isalpha()
+True
+>>> b.isalnum
+<built-in method isalnum of str object at 0x0000000002BB7D50>
+>>> b.isalnum()
+True
+>>> s.replace('x','z')
+'Akirachiz'
+>>> s.replace('z','x')
+'Akirachix'
+>>> s.replace('a','b')
+'Akirbchix'
+>>> s.replace('b','a')
+'Akirachix'
+>>> s[0]
+'A'
+>>> s[4]
+'a'
+>>> s[7]
+'i'
+>>> s[8]
+'x'
+>>> s[9]
+Traceback (most recent call last):
+  File "<pyshell#42>", line 1, in <module>
+    s[9]
+IndexError: string index out of range
+>>> s[-9]
+'A'
+>>> s[-1]
+'x'
+>>> [s-7]
+Traceback (most recent call last):
+  File "<pyshell#45>", line 1, in <module>
+    [s-7]
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+>>> s[-7]
+'i'
+>>> s[-6]
+'r'
+>>> s[-9]
+'A'
+>>> s[-8]
+'k'
+>>> s[-7]
+'i'
+>>> s[-7]
+'i'
+>>> s[-6]
+'r'
+>>> s[-5]
+'a'
+>>> s[-4]
+'c'
+>>> s[-3]
+'h'
+>>> s[-2]
+'i'
+>>> s[-1]
+'x'
+>>> s[0:4]
+'Akir'
+>>> s[0:9]
+'Akirachix'
+>>> s[2:7]
+'irach'
+>>> s[5:9]
+'chix'
+>>> s[5:10]
+'chix'
+>>> s[3;]
+SyntaxError: invalid syntax (<pyshell#63>, line 1)
+>>> s[3:]
+'rachix'
+>>> s[:4}
+SyntaxError: invalid syntax (<pyshell#65>, line 1)
+>>> s[:4]
+'Akir'
+>>> s[-9:-6]
+'Aki'
+>>> s[0:4]==s[-9:-5]
+True
+>>> s[-4:-2]
+'ch'
+>>> s[-4:-1]
+'chi'
+>>> s[-5:-2]
+'ach'
+>>> s[-4:-9]
+''
+>>> s[-4:-2]
+'ch'
+>>> s[-4:]
+'chix'
+>>> s[:4]
+'Akir'
+>>> s[:-5]
+'Akir'
+>>> first_name='Trizer'
+>>> second-name='Mmbone'
+SyntaxError: can't assign to operator (<pyshell#78>, line 1)
+>>> second_name='Mmbone'
+>>> full_name='{} {]'.format(first_name,second_name)
+Traceback (most recent call last):
+  File "<pyshell#80>", line 1, in <module>
+    full_name='{} {]'.format(first_name,second_name)
+ValueError: zero length field name in format
+>>> full_name='{} {}'.format(first_name,second_name)
+Traceback (most recent call last):
+  File "<pyshell#81>", line 1, in <module>
+    full_name='{} {}'.format(first_name,second_name)
+ValueError: zero length field name in format
+>>> first_name='Trizer'
+>>> second-name='Mmbone'
+SyntaxError: can't assign to operator (<pyshell#83>, line 1)
+>>> 
+>>> full_name='{}  {} '.format(first_name,second_name)
+Traceback (most recent call last):
+  File "<pyshell#85>", line 1, in <module>
+    full_name='{}  {} '.format(first_name,second_name)
+ValueError: zero length field name in format
+>>> full_name=' {}  {} '.format(first_name,second_name)
+Traceback (most recent call last):
+  File "<pyshell#86>", line 1, in <module>
+    full_name=' {}  {} '.format(first_name,second_name)
+ValueError: zero length field name in format
+>>> print(fullnmae)
+Traceback (most recent call last):
+  File "<pyshell#87>", line 1, in <module>
+    print(fullnmae)
+NameError: name 'fullnmae' is not defined
+>>> first_name='Trizer'
+>>> second-name='Mmbone'
+SyntaxError: can't assign to operator (<pyshell#89>, line 1)
+>>> first_name='Trizer'
+>>> second_name='Mmbone'
+>>> full_name='{} {} '.format(first_name,second_name)
+Traceback (most recent call last):
+  File "<pyshell#92>", line 1, in <module>
+    full_name='{} {} '.format(first_name,second_name)
+ValueError: zero length field name in format
+>>> print(full_name)
+Traceback (most recent call last):
+  File "<pyshell#93>", line 1, in <module>
+    print(full_name)
+NameError: name 'full_name' is not defined
+>>> full_name='Trizer Mmbone'
+>>> full_name
+'Trizer Mmbone'
+>>> a=full_name[0:6]
+>>> b=full_name[0:6]
+>>> a==first_name
+True
+>>> b==second_name
+False
+>>> b
+'Trizer'
+>>> a
+'Trizer'
+>>> a=first_name[0:6]
+>>> b=second_name[0:6]
+>>> a==first_name
+True
+>>> b==second_name
+True
+>>> a
+'Trizer'
+>>> b
+'Mmbone'
+>>> print(full_name)
+Trizer Mmbone
+>>> help()
+
+Welcome to Python 3.0!  This is the online help utility.
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at http://docs.python.org/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, or topics, type "modules",
+"keywords", or "topics".  Each module also comes with a one-line summary
+of what it does; to list the modules whose summaries contain a given word
+such as "spam", type "modules spam".
+
+help> 
+
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> symbols
+Traceback (most recent call last):
+  File "<pyshell#110>", line 1, in <module>
+    symbols
+NameError: name 'symbols' is not defined
+>>> help()
+
+Welcome to Python 3.0!  This is the online help utility.
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at http://docs.python.org/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, or topics, type "modules",
+"keywords", or "topics".  Each module also comes with a one-line summary
+of what it does; to list the modules whose summaries contain a given word
+such as "spam", type "modules spam".
+
+help> 
+
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> help>symbols
+Traceback (most recent call last):
+  File "<pyshell#112>", line 1, in <module>
+    help>symbols
+NameError: name 'symbols' is not defined
+>>> 
+>>> help()
+
+Welcome to Python 3.0!  This is the online help utility.
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at http://docs.python.org/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, or topics, type "modules",
+"keywords", or "topics".  Each module also comes with a one-line summary
+of what it does; to list the modules whose summaries contain a given word
+such as "spam", type "modules spam".
+
+help> symbols
+
+Here is a list of the punctuation symbols which Python assigns special meaning
+to. Enter any symbol to get more help.
+
+!=                  *=                  <<                  ^
+"                   +                   <<=                 ^=
+"""                 +=                  <=                  _
+%                   ,                   <>                  __
+%=                  -                   ==                  `
+&                   -=                  >                   b"
+&=                  .                   >=                  b'
+'                   ...                 >>                  j
+'''                 /                   >>=                 r"
+(                   //                  @                   r'
+)                   //=                 J                   |
+*                   /=                  [                   |=
+**                  :                   \                   ~
+**=                 <                   ]                   
+
+help> keywords
+
+Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+and                 elif                import              return
+as                  else                in                  try
+assert              except              is                  while
+break               finally             lambda              with
+class               for                 not                 yield
+continue            from                or                  
+def                 global              pass                
+del                 if                  raise               
+
+help> modules
+
+Please wait a moment while I gather a list of all available modules...
+
+AutoComplete        _sha256             formatter           queue
+AutoCompleteWindow  _sha512             fractions           quopri
+AutoExpand          _socket             ftplib              random
+Bindings            _sqlite3            functools           re
+CallTipWindow       _sre                gc                  reprlib
+CallTips            _ssl                genericpath         rlcompleter
+ClassBrowser        _stringio           getopt              rpc
+CodeContext         _strptime           getpass             run
+ColorDelegator      _struct             gettext             runpy
+Debugger            _subprocess         glob                sched
+Delegator           _symtable           gzip                select
+EditorWindow        _testcapi           hashlib             shelve
+FileList            _thread             heapq               shlex
+FormatParagraph     _threading_local    hmac                shutil
+GrepDialog          _tkinter            html                signal
+HyperParser         _warnings           http                site
+IOBinding           _weakref            idle                smtpd
+IdleHistory         _weakrefset         idlelib             smtplib
+MultiCall           abc                 idlever             sndhdr
+MultiStatusBar      aboutDialog         imaplib             socket
+ObjectBrowser       aifc                imghdr              socketserver
+OutputWindow        antigravity         imp                 sqlite3
+ParenMatch          array               inspect             sre_compile
+PathBrowser         ast                 io                  sre_constants
+Percolator          asynchat            itertools           sre_parse
+PyParse             asyncore            json                ssl
+PyShell             atexit              keybindingDialog    stat
+RemoteDebugger      audioop             keyword             string
+RemoteObjectBrowser base64              lib2to3             stringprep
+ReplaceDialog       bdb                 linecache           struct
+ScriptBinding       binascii            locale              subprocess
+ScrolledList        binhex              logging             sunau
+SearchDialog        bisect              macosxSupport       symbol
+SearchDialogBase    build_class         macpath             symtable
+SearchEngine        builtins            macurl2path         sys
+StackViewer         bz2                 mailbox             tabbedpages
+ToolTip             cProfile            mailcap             tabnanny
+TreeWidget          calendar            marshal             tarfile
+UndoDelegator       cgi                 math                telnetlib
+WidgetRedirector    cgitb               mimetypes           tempfile
+WindowList          chunk               mmap                test
+ZoomHeight          cmath               modulefinder        testcode
+__future__          cmd                 msilib              textView
+_abcoll             code                msvcrt              textwrap
+_ast                codecs              multiprocessing     this
+_bisect             codeop              netrc               threading
+_bytesio            collections         nntplib             time
+_codecs             colorsys            nt                  timeit
+_codecs_cn          compileall          ntpath              tkinter
+_codecs_hk          configDialog        nturl2path          token
+_codecs_iso2022     configHandler       numbers             tokenize
+_codecs_jp          configHelpSourceEdit opcode              trace
+_codecs_kr          configSectionNameDialog operator            traceback
+_codecs_tw          configparser        optparse            tty
+_collections        contextlib          os                  turtle
+_csv                copy                os2emxpath          types
+_ctypes             copyreg             parser              unicodedata
+_ctypes_test        csv                 pdb                 unittest
+_dummy_thread       ctypes              pickle              urllib
+_elementtree        curses              pickletools         uu
+_fileio             datetime            pipes               uuid
+_functools          dbm                 pkgutil             warnings
+_hashlib            decimal             platform            wave
+_heapq              difflib             plistlib            weakref
+_json               dis                 poplib              webbrowser
+_locale             distutils           posixpath           winreg
+_lsprof             doctest             pprint              winsound
+_markupbase         dummy_threading     profile             wsgiref
+_md5                dynOptionMenuWidget pstats              xdrlib
+_msi                email               pty                 xml
+_multibytecodec     encodings           py_compile          xmlrpc
+_multiprocessing    errno               pyclbr              xxsubtype
+_pickle             filecmp             pydoc               zipfile
+_random             fileinput           pydoc_topics        zipimport
+_sha1               fnmatch             pyexpat             zlib
+
+Enter any module name to get more help.  Or, type "modules spam" to search
+for modules whose descriptions contain the word "spam".
+
+help> 

@@ -1,0 +1,152 @@
+a=Python 3.0.1 (r301:69561, Feb 13 2009, 17:50:10) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 3+3
+6
+>>> 5_3
+SyntaxError: invalid syntax (<pyshell#1>, line 1)
+>>> 5-3
+2
+>>> 3*3
+9
+>>> 9/3
+3.0
+>>> 10/3
+3.3333333333333335
+>>> 10//3
+3
+>>> 10%3
+1
+>>> 9988%55
+33
+>>> 2**3
+8
+>>> 3==3
+True
+>>> 3==4
+False
+>>> 3!=4
+True
+>>> 3!=3
+False
+>>> 3<4
+True
+>>> 3>4
+False
+>>> 3<=3
+True
+>>> 3<=4
+True
+>>> 3<=2
+False
+>>> 4>=3
+True
+>>> Akirachix
+Traceback (most recent call last):
+  File "<pyshell#20>", line 1, in <module>
+    Akirachix
+NameError: name 'Akirachix' is not defined
+>>> "Akirachix"
+'Akirachix'
+>>> "a"+"b"
+'ab'
+>>> "a"-"b"
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    "a"-"b"
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+>>> "a"*5
+'aaaaa'
+>>> "ha"*10
+'hahahahahahahahahaha'
+>>> "Hello'+"Akirachix"
+SyntaxError: invalid syntax (<pyshell#26>, line 1)
+>>> "Hello"+"Akirachix"
+'HelloAkirachix'
+>>> "girl"=="girl"
+True
+>>> "girl"=="boy"
+False
+>>> "girl">"boy"
+True
+>>> "boy">"boy"
+False
+>>> a=3
+>>> a
+3
+>>> b
+Traceback (most recent call last):
+  File "<pyshell#34>", line 1, in <module>
+    b
+NameError: name 'b' is not defined
+>>> a='girls"
+SyntaxError: EOL while scanning string literal (<pyshell#35>, line 1)
+>>> a="girls"
+>>> b=10
+>>> a*b
+'girlsgirlsgirlsgirlsgirlsgirlsgirlsgirlsgirlsgirls'
+>>> type(a)
+<class 'str'>
+>>> type(b)
+<class 'int'>
+>>> c=5
+>>> d=7
+>>> e=c*d
+>>> f=d%c
+>>> e>f
+True
+>>> f>e
+False
+>>> c*d<d-c*12
+False
+>>> "hello"+James+"your number is"+0710000
+SyntaxError: invalid token (<pyshell#49>, line 1)
+>>> "Hello"+"Trizer"+"Akirachix"
+'HelloTrizerAkirachix'
+>>> firstname="Trizer"
+>>> lastname="Mmbone"
+>>> school="Akirachix"
+>>> firstname
+'Trizer'
+>>> lastname
+'Mmbone'
+>>> school
+'Akirachix'
+>>> hello firstname lastname welcome to Akirachix
+SyntaxError: invalid syntax (<pyshell#57>, line 1)
+>>> hello Trizer Mmbone welcome to Akirachix
+SyntaxError: invalid syntax (<pyshell#58>, line 1)
+>>> "Hello"+firstname+lastname+welcome to Akirachix
+SyntaxError: invalid syntax (<pyshell#59>, line 1)
+>>> "Hello"+firstname+lastname+"welcome"+"to"+"Akirachix"
+'HelloTrizerMmbonewelcometoAkirachix'
+>>> 
+>>> "Hello""space"+firstname"space"+lastname"space"+"welcome""space"+"to""space"+"Akirachix"
+SyntaxError: invalid syntax (<pyshell#62>, line 1)
+>>> "Hello"" "+firstname" "+lastname" "+" ""welcome"" ""to"" "+" ""Akirachix"
+SyntaxError: invalid syntax (<pyshell#63>, line 1)
+>>> "Hello "+firstname+" "+lastname+" welcome to "+school
+'Hello Trizer Mmbone welcome to Akirachix'
+>>> "Hello "+firstname=" "+lastname+" welcome to"+school
+SyntaxError: can't assign to operator (<pyshell#65>, line 1)
+>>> "Hello "+firstname+" "+lastname+" welcome to"+school
+'Hello Trizer Mmbone welcome toAkirachix'
+>>> "my name is Trizer"
+'my name is Trizer'
+>>> "my name is Trizer"
+'my name is Trizer'
+>>> "Hello "+firstname
+'Hello Trizer'
+>>> "Hello"=firstname+" "+lastename
+SyntaxError: can't assign to literal (<pyshell#70>, line 1)
+>>> "Hello"+firstname+" "+lastname
+'HelloTrizer Mmbone'
+>>> school
+'Akirachix'
+>>> 3(5%2)*(70//10)+20-15
+Traceback (most recent call last):
+  File "<pyshell#73>", line 1, in <module>
+    3(5%2)*(70//10)+20-15
+TypeError: 'int' object is not callable
+>>> 3*5%2**70//10*+20-15
+5
+>>> 

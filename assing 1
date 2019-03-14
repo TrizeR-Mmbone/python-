@@ -1,0 +1,155 @@
+Python 3.0.1 (r301:69561, Feb 13 2009, 17:50:10) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+>>> squares=[number*number for number in numbers]
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    squares=[number*number for number in numbers]
+NameError: name 'numbers' is not defined
+>>> x=range(0,9)
+>>> for n in x:
+	print(n*)
+	
+SyntaxError: invalid syntax (<pyshell#4>, line 2)
+>>> x=range (0,9)
+>>> x
+range(0, 9)
+>>> for n  in x:
+	print(n*5)
+
+	
+0
+5
+10
+15
+20
+25
+30
+35
+40
+>>> squares=[number*number for number in numbers]
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    squares=[number*number for number in numbers]
+NameError: name 'numbers' is not defined
+>>> x=[0,1,2,3,4,,,5,6,7,8,9]
+SyntaxError: invalid syntax (<pyshell#12>, line 1)
+>>> x=[0,1,2,3,4,5,6,7,8,9]
+>>> x.pop()
+9
+>>> x
+[0, 1, 2, 3, 4, 5, 6, 7, 8]
+>>> x.extend([10,11])
+>>> x
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11]
+>>> x.append(13)
+>>> x
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 13]
+>>> x.remove(13)
+>>> x
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11]
+>>> x.reverse(10)
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    x.reverse(10)
+TypeError: reverse() takes no arguments (1 given)
+>>> 
+>>> x.count(10)
+1
+>>> x
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11]
+>>> x.insert([13])
+Traceback (most recent call last):
+  File "<pyshell#26>", line 1, in <module>
+    x.insert([13])
+TypeError: insert() takes exactly 2 arguments (1 given)
+>>> x.insert(4,4.5)
+>>> x
+[0, 1, 2, 3, 4.5, 4, 5, 6, 7, 8, 10, 11]
+>>> x.index(7)
+8
+>>> x
+[0, 1, 2, 3, 4.5, 4, 5, 6, 7, 8, 10, 11]
+>>> x.sort()
+>>> x
+[0, 1, 2, 3, 4, 4.5, 5, 6, 7, 8, 10, 11]
+>>> x.reverse()
+>>> x
+[11, 10, 8, 7, 6, 5, 4.5, 4, 3, 2, 1, 0]
+>>> x.sort()
+>>> x
+[0, 1, 2, 3, 4, 4.5, 5, 6, 7, 8, 10, 11]
+>>> x.remove(10)
+>>> x
+[0, 1, 2, 3, 4, 4.5, 5, 6, 7, 8, 11]
+>>> x=[0,1,2,3,4,5,6,7,8,9]
+>>> x
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> y=[m*10 for m in x]
+>>> y
+[0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+>>> 
+>>> 
+>>> 
+>>> for m in x:
+	print(m*10)
+
+	
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> k=x[:5]
+>>> k
+[0, 1, 2, 3, 4]
+>>> v=x[5:]
+>>> V
+Traceback (most recent call last):
+  File "<pyshell#65>", line 1, in <module>
+    V
+NameError: name 'V' is not defined
+>>> v=x[5:]
+>>> v
+[5, 6, 7, 8, 9]
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> n=[[1,2,3][4,5,6][7,8,9]]
+Traceback (most recent call last):
+  File "<pyshell#74>", line 1, in <module>
+    n=[[1,2,3][4,5,6][7,8,9]]
+TypeError: list indices must be integers, not tuple
+>>> n=[[1,2,3],[4,5,6],[7,8,9]]
+>>> m=[]
+>>> for sublist in n:
+	for x in sublist:
+		m.append(x)
+
+		
+>>> 
+>>> m
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> 
+>>> 
